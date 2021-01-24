@@ -19,10 +19,10 @@ const galleryListRef = document.querySelector('#gallery');
 
 const addGallery = images.map(image => {
   const itemList = document.createElement('li');
-  const imgList = document.createElement('img');
+  const img = document.createElement('img');
   itemList.insertAdjacentHTML(
     'afterbegin',
-    `<imgList src = ${image.url}> alt = ${image.alt}`,
+    `<img src = ${image.url}> alt = ${image.alt}`,
   );
   return itemList;
 });
