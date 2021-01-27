@@ -17,11 +17,10 @@ const images = [
 ];
 const galleryListRef = document.querySelector('#gallery');
 
-const addGallery = images.forEach(image => {
+const addGallery = images.map(image => {
   galleryListRef.insertAdjacentHTML(
     'beforeend',
     `<li><img src = ${image.url} alt = ${image.alt}></li>`,
   );
 });
-
-galleryListRef.append(...addGallery);
+// console.log(galleryListRef);
